@@ -1,0 +1,11 @@
+###########################################
+#
+#    Ejemplo para mi proyecto
+#
+###########################################
+
+library(readxl)
+df <- read_xlsx("Regre.xlsx")
+modelo <- lm(df$Y~df$X, df)
+summary(modelo)
+
